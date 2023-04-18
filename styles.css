@@ -1,0 +1,69 @@
+input:focus {
+  outline: none;
+}
+
+.move span {
+  font-size: 4rem;
+}
+.move button {
+  all: unset;
+}
+
+.move__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.choice {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.choice:hover {
+  font-size: 6rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.result__heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 3rem;
+}
+
+.results__all {
+  display: flex;
+  gap: 1rem;
+}
+
+.input__score {
+  border: none;
+  font-size: 3rem;
+}
+
+#resultaat {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#restart {
+  all: unset;
+  border: 2px solid hsl(0, 0%, 0%);
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  margin-top: 3rem;
+  position: absolute;
+}

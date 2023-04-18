@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock Paperr Scissors</title>
+  </head>
+  <body>
+    <button id="restart" type="button" onclick="reload()">
+      Restart this game
+    </button>
+    <h1 class="title">Rock paperr Scissors!</h1>
+    <ul class="move__list">
+      <li class="move">
+        <button id="paper" type="button" onclick="paper()">
+          <span class="choice">🖐️</span>
+        </button>
+      </li>
+      <li class="move">
+        <button id="rock" type="button" onclick="rock()">
+          <span class="choice">✊</span>
+        </button>
+      </li>
+      <li class="move">
+        <button id="scissors" type="button" onclick="scissors()">
+          <span class="choice">✌️</span>
+        </button>
+      </li>
+      <input type="hidden" name="user-move" />
+    </ul>
+
+    <div>
+      <h2 class="result__heading">Results</h2>
+      <div class="results">
+        <div class="results__all">
+          <p>You</p>
+          <p id="player_score">0</p>
+        </div>
+        <div class="results__all">
+          <p>Computer</p>
+          <p id="computer_score">0</p>
+        </div>
+      </div>
+    </div>
+    <p id="resultaat"></p>
+    <script src="main.js"></script>
+  </body>
+</html>
