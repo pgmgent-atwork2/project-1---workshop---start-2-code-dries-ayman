@@ -1,229 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/document.css" />
+    <title>Tutorial - Rock Paper Scissors</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/document.css" />
-  <title>Tutorial - Rock Paper Scissors</title>
-</head>
-
-<body>
-  <div>
-    <h1 class="heading__game">Vandaag gaan we het populaire kinderspel, blad steen schaar maken.</h1>
-    <div class="game__rules">
-      <h3>In blad steen schaar heb je 3 keuzes namelijk</h3>
-      <ol>
-        <li>Blad</li>
-        <li>Steen</li>
-        <li>Schaar</li>
-      </ol>
-    </div>
+  <body>
     <div>
-      <h3>Wie had dat nu verwacht? De spelregels zijn als volgt:</h3>
-      <ul>
-        <li>Blad wint van steen, </li>
-        <li>Steen wint van schaar, </li>
-        <li>En tenslotte wint schaar van blad </li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>Dit project zal er zo als volgt uit zien:</h3>
-      <div class="game__ss">
-        <p>Begin</p>
-        <img class="img__game" src="../assets/img/start.png" alt="start">
+      <h1 class="heading__game">
+        Vandaag gaan we het populaire kinderspel, blad steen schaar maken.
+      </h1>
+      <div class="game__rules">
+        <h3>In blad steen schaar heb je 3 keuzes namelijk</h3>
+        <ol>
+          <li>Blad</li>
+          <li>Steen</li>
+          <li>Schaar</li>
+        </ol>
       </div>
-      <div class="game__ss">
-        <p>Winst</p>
-        <img class="img__game" src="../assets/img/win.png" alt="win">
-      </div>
-      <div class="game__ss">
-        <p>Gelijkspel</p>
-        <img class="img__game" src="../assets/img/draw.png" alt="draw">
-      </div>
-      <div class="game__ss">
-        <p>Verlies</p>
-        <img class="img__game" src="../assets/img/lose.png" alt="lose">
-      </div>
-    </div>
-
-    <div>
-      <h3>Om dit project te realiseren zullen we gebruikmaken van</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </div>
-
-    <div>
-      <p class="code__wizz">Je zult zien dat je geen code-wizz moet zijn om een leuke interactieve beginners spel te
-        maken.</p>
-    </div>
-
-    <div class="step__one">
-      <h2>Stap 1 - Mappen en Bestanden</h2>
-      <p>We hebben een code-editor nodig. In de workshop gebruiken we <a class="blue__underline" target="_blank"
-          href="https://code.visualstudio.com/">Visual Studio Code.</a></p>
-
-      <div class="steps__one">
-        <h4>- 1.1 Maak een nieuwe map aan en geef die als naam blad-steen-schaar. </h4>
-        <p>Je kan deze map overal maken, in dit geval is deze map aangemaakt op het bureaublad.</p>
+      <div>
+        <h3>Wie had dat nu verwacht? De spelregels zijn als volgt:</h3>
+        <ul>
+          <li>Blad wint van steen,</li>
+          <li>Steen wint van schaar,</li>
+          <li>En tenslotte wint schaar van blad</li>
+        </ul>
       </div>
 
-      <div class="steps__one">
-        <h4>- 1.2 Rechtsklik op de folder en je zal de optie ‘open with code’ zien, druk erop.</h4>
-        <img class="steps__img" src="/assets/img/folder.png" alt="folder">
-        <p>Het resultaat zal een lege vscode folder zijn.</p>
-        <img class="steps__img" src="/assets/img/lege__folder.png" alt="folder1-leeg">
-        <p>Maak de onderstaande folders aan en steek onderstaande files in.</p>
-        <img class="steps__img" src="/assets/img/map-struc.png" alt="mappe-structuur">
+      <div>
+        <h3>Dit project zal er zo als volgt uit zien:</h3>
+        <div class="game__ss">
+          <p>Begin</p>
+          <img class="img__game" src="assets/img/start.png" alt="start" />
+        </div>
+        <div class="game__ss">
+          <p>Winst</p>
+          <img class="img__game" src="assets/img/win.png" alt="win" />
+        </div>
+        <div class="game__ss">
+          <p>Gelijkspel</p>
+          <img class="img__game" src="assets/img/draw.png" alt="draw" />
+        </div>
+        <div class="game__ss">
+          <p>Verlies</p>
+          <img class="img__game" src="assets/img/lose.png" alt="lose" />
+        </div>
       </div>
 
-      <div class="steps__one">
-        <h4>- 1.3 Start de live server door rechtsonder de blauwe balk te klikken op <span class="blue__underline">Go
-            Live.</span></h4>
-        <h4>Jouw standaard browser zal nu gestart worden en je zal een blanco webpagina zien!</h4>
-        <p><strong>GREAT SUCCES</strong></p>
+      <div>
+        <h3>Om dit project te realiseren zullen we gebruikmaken van</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
       </div>
 
-    </div>
-
-    <div class="step__two">
-      <h2>Stap 2 - HTML & CSS</h2>
-      <p>Nu is het tijd om die codeerspierballen boven te halen.</p>
-
-      <div class="steps__one">
-        <h4>- 2.1 Kopieer onderstaande code in jouw Index.html bestand. Bewaar vervolgens dat bestand.</h4>
-        <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/embedded/html,result/dark/"
-          allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-        <p>Dit is een basis-structuur waarin we verder werken.</p>
-        <p>Kopieer onderstaande code in jouw main.css dit zal alles bevatten om het spel vorm te geven.</p>
-        <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/24/embedded/css,result/dark/"
-          allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-      </div>
-
-      <div class="steps__one">
-        <h4>- 2.3 Bekijk het resultaat in de browser (de url is hoogstwaarschijnlijk: http://127.0.0.1:5500/).</h4>
-        <p>Om onze applicatie vorm te geven kun je deze onderstaande code toevoegen aan de html. (deze code moet in de
-          body staan)</p>
-        <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/34/embedded/html/dark/"
-          allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-        <p>Deze code geeft dit als resultaat</p>
-        <img class="steps__img" src="/assets/img/Screenshot 2023-04-20 at 15.42.14.png" alt="result first">
-        <p>De movelist was leeg, deze lijst is nodig om te mogelijke keuzes aan te spreken, om de movelist op te vullen
-          heb je deze onderstaande code nodig. Deze code moet je tussen de ul (unordered-list) genaamd move—list steken.
+      <div>
+        <p class="code__wizz">
+          Je zult zien dat je geen code-wizz moet zijn om een leuke interactieve
+          beginners spel te maken.
         </p>
-        <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/9/embedded/html,result/dark/"
-          allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-        <p>Dit is alle html code die we nodig hebben voor dit spelletje.</p>
-        <p>Nadat je alles hebt gekopieerd, zal je dit resultaat bekomen door de magie van HTML en CSS samen te voegen.
+      </div>
+
+      <div class="step__one">
+        <h2>Stap 1 - Mappen en Bestanden</h2>
+        <p>
+          We hebben een code-editor nodig. In de workshop gebruiken we
+          <a
+            class="blue__underline"
+            target="_blank"
+            href="https://code.visualstudio.com/"
+            >Visual Studio Code.</a
+          >
         </p>
-        <img class="steps__img" src="/assets/img/start.png" alt="rock-paper-siccors">
-      </div>
-    </div>
 
-    <p>We zijn nu halfweg klaar met ons project, we hebben tot nu toe de blokken(HTML) van ons huis(applicatie) gebouwd
-      en een likje verf(CSS) meegegeven, het enige wat nog overschiet is de interactiviteit(javascript) erin steken. Wat
-      voor nut heeft een huis als je niet erin kan slapen?</p>
-
-
-    <div class="step__three">
-      <h2>Stap 3 - INTERACTIVITEIT MET JAVASCRIPT</h2>
-      <p>Iedereen herinnert hem zich zijn eerste code die hij of zij met javascript heeft geschreven, namelijk.</p>
-      <p>Console.log(‘Hello World’);</p>
-
-      <div class="steps__one">
-        <h4>- 3.1 Om te beginnen moeten we globale waarden definieren voor onze applicatie, deze waarden zorgen voor de
-          connectie tussen HTML en de JS.</h4>
-        <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/27/embedded/js,result/dark/"
-          allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-        <div>
-          <p>Door gebruik te maken van let resultaat = document.getElementById(‘resultaat’), is de brug tussen</p>
-          <img class="steps__img" src="/assets/img/code-s.png" alt="code snip">
-          <p>en let resultaat gelegd, deze heeft nu een (voorlopige) waarde van 0; later gaan we die opvullen met een
-            functie die we hier onderaan gaan schrijven.</p>
-          <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/29/embedded/js,result/dark/"
-            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-        </div>
-
-      </div>
-
-      <div class="steps__one">
-        <h4>- 3.2 Vaste beginwaardes meegeven.</h4>
-
-        <p>Hier declareren we de beginwaardes van ons project zodat we altijd van 0 beginnen bij een nieuw spel. En we
-          maken ook de moveArray aan, dit is een container met de huidige (legale) opties.</p>
-      </div>
-
-      <div class="steps__one">
-        <h4>- 3.3 Functie computerNumberGenerator </h4>
-        <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/11/embedded/js,result/dark/"
-          allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-        <p>Deze functie zorgt ervoor dat de computer number op lijn 4 een waarde krijgt tussen 0 en 2.</p>
-        <p>Dit is bepaald door de moveArrayLength: die bedraagt hier 3 want we hebben maar 3 opties in onze array, mocht
-          de array 5 opties bevatten dan zou deze functie een getal genereren tussen 0 en 4.</p>
-      </div>
-
-      <div class="steps__one">
-        <h4>- 3.4 Alle functies toevoegen per move (Rock,Paper,Scissors)</h4>
         <div class="steps__one">
-          <h4>- 3.4.1 Rock</h4>
-          <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/13/embedded/js,result/dark/"
-            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <h4>
+            - 1.1 Maak een nieuwe map aan en geef die als naam
+            blad-steen-schaar.
+          </h4>
+          <p>
+            Je kan deze map overal maken, in dit geval is deze map aangemaakt op
+            het bureaublad.
+          </p>
         </div>
 
         <div class="steps__one">
-          <h4>- 3.4.2 Scissors</h4>
-          <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/17/embedded/js,result/dark/"
-            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <h4>
+            - 1.2 Rechtsklik op de folder en je zal de optie ‘open with code’
+            zien, druk erop.
+          </h4>
+          <img class="steps__img" src="/assets/img/folder.png" alt="folder" />
+          <p>Het resultaat zal een lege vscode folder zijn.</p>
+          <img
+            class="steps__img"
+            src="/assets/img/lege__folder.png"
+            alt="folder1-leeg"
+          />
+          <p>
+            Maak de onderstaande folders aan en steek onderstaande files in.
+          </p>
+          <img
+            class="steps__img"
+            src="/assets/img/map-struc.png"
+            alt="mappe-structuur"
+          />
         </div>
 
         <div class="steps__one">
-          <h4>- 3.4.2 Paper</h4>
-          <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/15/embedded/js,result/dark/"
-            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <h4>
+            - 1.3 Start de live server door rechtsonder de blauwe balk te
+            klikken op <span class="blue__underline">Go Live.</span>
+          </h4>
+          <h4>
+            Jouw standaard browser zal nu gestart worden en je zal een blanco
+            webpagina zien!
+          </h4>
+          <p><strong>GREAT SUCCES</strong></p>
         </div>
       </div>
 
-      <div class="steps__one">
-        <h4>- 3.5 Een laatste functie die de pagina herlaadt zodat je opnieuw kan beginnen.</h4>
-        <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/30/embedded/js,result/dark/"
-          allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+      <div class="step__two">
+        <h2>Stap 2 - HTML & CSS</h2>
+        <p>Nu is het tijd om die codeerspierballen boven te halen.</p>
+
+        <div class="steps__one">
+          <h4>
+            - 2.1 Kopieer onderstaande code in jouw Index.html bestand. Bewaar
+            vervolgens dat bestand.
+          </h4>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/DriesD1/6h1dfams/embedded/html,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <p>Dit is een basis-structuur waarin we verder werken.</p>
+          <p>
+            Kopieer onderstaande code in jouw main.css dit zal alles bevatten om
+            het spel vorm te geven.
+          </p>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/DriesD1/6h1dfams/24/embedded/css,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div class="steps__one">
+          <h4>
+            - 2.3 Bekijk het resultaat in de browser (de url is
+            hoogstwaarschijnlijk: http://127.0.0.1:5500/).
+          </h4>
+          <p>
+            Om onze applicatie vorm te geven kun je deze onderstaande code
+            toevoegen aan de html. (deze code moet in de body staan)
+          </p>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/DriesD1/6h1dfams/34/embedded/html/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <p>Deze code geeft dit als resultaat</p>
+          <img
+            class="steps__img"
+            src="/assets/img/Screenshot 2023-04-20 at 15.42.14.png"
+            alt="result first"
+          />
+          <p>
+            De movelist was leeg, deze lijst is nodig om te mogelijke keuzes aan
+            te spreken, om de movelist op te vullen heb je deze onderstaande
+            code nodig. Deze code moet je tussen de ul (unordered-list) genaamd
+            move—list steken.
+          </p>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/DriesD1/6h1dfams/9/embedded/html,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <p>Dit is alle html code die we nodig hebben voor dit spelletje.</p>
+          <p>
+            Nadat je alles hebt gekopieerd, zal je dit resultaat bekomen door de
+            magie van HTML en CSS samen te voegen.
+          </p>
+          <img
+            class="steps__img"
+            src="/assets/img/start.png"
+            alt="rock-paper-siccors"
+          />
+        </div>
       </div>
 
-      <div class="steps__one">
-        <h4>- 3.6 Resultaat Javascript</h4>
-        <p>Indien je alle stappen aandachtig hebt gevolgd dan moet je volledige resultaat als volgt uitzien.</p>
-        <iframe width="100%" height="300" src="//jsfiddle.net/DriesD1/6h1dfams/22/embedded/js,result/dark/"
-          allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+      <p>
+        We zijn nu halfweg klaar met ons project, we hebben tot nu toe de
+        blokken(HTML) van ons huis(applicatie) gebouwd en een likje verf(CSS)
+        meegegeven, het enige wat nog overschiet is de
+        interactiviteit(javascript) erin steken. Wat voor nut heeft een huis als
+        je niet erin kan slapen?
+      </p>
+
+      <div class="step__three">
+        <h2>Stap 3 - INTERACTIVITEIT MET JAVASCRIPT</h2>
+        <p>
+          Iedereen herinnert hem zich zijn eerste code die hij of zij met
+          javascript heeft geschreven, namelijk.
+        </p>
+        <p>Console.log(‘Hello World’);</p>
+
+        <div class="steps__one">
+          <h4>
+            - 3.1 Om te beginnen moeten we globale waarden definieren voor onze
+            applicatie, deze waarden zorgen voor de connectie tussen HTML en de
+            JS.
+          </h4>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/DriesD1/6h1dfams/27/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+
+          <div>
+            <p>
+              Door gebruik te maken van let resultaat =
+              document.getElementById(‘resultaat’), is de brug tussen
+            </p>
+            <img
+              class="steps__img"
+              src="/assets/img/code-s.png"
+              alt="code snip"
+            />
+            <p>
+              en let resultaat gelegd, deze heeft nu een (voorlopige) waarde van
+              0; later gaan we die opvullen met een functie die we hier onderaan
+              gaan schrijven.
+            </p>
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/DriesD1/6h1dfams/29/embedded/js,result/dark/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="steps__one">
+          <h4>- 3.2 Vaste beginwaardes meegeven.</h4>
+
+          <p>
+            Hier declareren we de beginwaardes van ons project zodat we altijd
+            van 0 beginnen bij een nieuw spel. En we maken ook de moveArray aan,
+            dit is een container met de huidige (legale) opties.
+          </p>
+        </div>
+
+        <div class="steps__one">
+          <h4>- 3.3 Functie computerNumberGenerator</h4>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/DriesD1/6h1dfams/11/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <p>
+            Deze functie zorgt ervoor dat de computer number op lijn 4 een
+            waarde krijgt tussen 0 en 2.
+          </p>
+          <p>
+            Dit is bepaald door de moveArrayLength: die bedraagt hier 3 want we
+            hebben maar 3 opties in onze array, mocht de array 5 opties bevatten
+            dan zou deze functie een getal genereren tussen 0 en 4.
+          </p>
+        </div>
+
+        <div class="steps__one">
+          <h4>- 3.4 Alle functies toevoegen per move (Rock,Paper,Scissors)</h4>
+          <div class="steps__one">
+            <h4>- 3.4.1 Rock</h4>
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/DriesD1/6h1dfams/13/embedded/js,result/dark/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <div class="steps__one">
+            <h4>- 3.4.2 Scissors</h4>
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/DriesD1/6h1dfams/17/embedded/js,result/dark/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <div class="steps__one">
+            <h4>- 3.4.2 Paper</h4>
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/DriesD1/6h1dfams/15/embedded/js,result/dark/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="steps__one">
+          <h4>
+            - 3.5 Een laatste functie die de pagina herlaadt zodat je opnieuw
+            kan beginnen.
+          </h4>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/DriesD1/6h1dfams/30/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div class="steps__one">
+          <h4>- 3.6 Resultaat Javascript</h4>
+          <p>
+            Indien je alle stappen aandachtig hebt gevolgd dan moet je volledige
+            resultaat als volgt uitzien.
+          </p>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/DriesD1/6h1dfams/22/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="step__four">
+        <p>
+          Als je alle stappen schoon gevolgd hebt, dan zul je kunnen beginnen
+          met het spel en zal het zo eruit zien
+        </p>
+
+        <img class="steps__img" src="/assets/img/start.png" alt="start" />
+
+        <h2>of</h2>
+
+        <img class="steps__img" src="/assets/img/lose.png" alt="lose" />
+
+        <h2>of</h2>
+
+        <img class="steps__img" src="/assets/img/draw.png" alt="draw" />
+
+        <h2>of</h2>
+
+        <img class="steps__img" src="/assets/img/win.png" alt="win" />
       </div>
     </div>
-
-    <div class="step__four">
-
-      <p>Als je alle stappen schoon gevolgd hebt, dan zul je kunnen beginnen met het spel en zal het zo eruit zien</p>
-
-      <img class="steps__img" src="/assets/img/start.png" alt="start">
-
-      <h2>of</h2>
-
-      <img class="steps__img" src="/assets/img/lose.png" alt="lose">
-
-      <h2>of</h2>
-
-      <img class="steps__img" src="/assets/img/draw.png" alt="draw">
-
-      <h2>of</h2>
-
-      <img class="steps__img" src="/assets/img/win.png" alt="win">
-
-    </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
