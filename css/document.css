@@ -1,0 +1,70 @@
+
+/* documentation.html */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+li{
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+.img__game{
+  width: 60rem;
+}
+
+.heading__game{
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.game__ss{
+    margin-top: 5rem;
+}
+
+.game__ss p{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.code__wizz{
+    text-decoration: line-through;
+    margin: 4rem 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.blue__underline{
+    color: blue;
+    text-decoration: underline;
+}
+
+.steps__one{
+    margin: 3rem 3rem;
+}
+
+.steps__img{
+    width: 50rem;
+}
